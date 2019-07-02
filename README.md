@@ -78,8 +78,8 @@ public Constant(double value): Erstellt eine neue konstante Funktion mit dem ang
 Für die konstante Funktion _f_ mit dem Wert _n_ gilt:
 
 ```
-##f(x) = n
-##f'(x) = 0
+f(x) = n
+f'(x) = 0
 ```
 #### Identity.java
 
@@ -88,8 +88,8 @@ Die Identitätsfunktion - Erstellen Sie die Klasse Identity.
 Für die Identitätsfunktion _f_ gilt:
 
 ```
-##f(x) = x
-##f'(x) = 1
+f(x) = x
+f'(x) = 1
 ```
 #### Sum.java
 
@@ -102,8 +102,8 @@ angegebenen Summanden.
 Für die Summe _f_ der Summanden _g_ und _h_ gilt:
 
 ```
-##f(x) = g(x) + h(x)
-##f'(x) = g'(x) + h'(x)
+f(x) = g(x) + h(x)
+f'(x) = g'(x) + h'(x)
 ```
 #### Power.java
 
@@ -115,8 +115,8 @@ public Power(double exponent): Erstellt eine neue Potenzfunktion mit dem angegeb
 Für die Potenzfunktion _f_ mit dem Exponenten _k_ gilt:
 
 ```
-##f(x) = x
-##f'(x) = k * x
+f(x) = x
+f'(x) = k * x
 ```
 ```
 k
@@ -134,8 +134,8 @@ angegebenen Faktor und der angegebenen Funktion.
 Für die Vorfaktor-Funktion _f_ mit dem Faktor _n_ und der Funktion _h_ gilt:
 
 ```
-## f(x) = n * h(x)
-## f'(x) = n * h'(x)
+f(x) = n * h(x)
+f'(x) = n * h'(x)
 ```
 #### Product.java
 
@@ -148,8 +148,8 @@ angegebenen Faktoren.
 Für das Produkt _f_ der Faktoren _g_ und _h_ gilt:
 
 ```
-## f(x) = g(x) * h(x)
-## f'(x) = g(x) * h'(x) + g'(x) * h(x)
+f(x) = g(x) * h(x)
+f'(x) = g(x) * h'(x) + g'(x) * h(x)
 ```
 Die entsprechende Ableitungsregel dürfte Ihnen als Produktregel bekannt sein.
 
@@ -170,8 +170,8 @@ Die Sinusfunktion - Erstellen Sie die Klasse Sine.
 Für den Sinus _f_ gilt:
 
 ```
-## f(x) = sin(x)
-## f'(x) = cos(x)
+f(x) = sin(x)
+f'(x) = cos(x)
 ```
 #### Cosine.java
 
@@ -180,8 +180,8 @@ Die Cosinusfunktion - Erstellen Sie die Klasse Cosine.
 Für den Cosinus _f_ gilt:
 
 ```
-## f(x) = cos(x)
-## f'(x) = -sin(x)
+f(x) = cos(x)
+f'(x) = -sin(x)
 ```
 #### Tangent.java
 
@@ -191,7 +191,7 @@ Die Tangensfunktion - Erstellen Sie die Klasse Tangent.
 Für den Tangens _f_ gilt:
 
 ```
-## f(x) = tan(x)
+f(x) = tan(x)
 ```
 #### Exponential.java
 
@@ -288,6 +288,27 @@ Testen Sie Ihre Klassen ausführlich!
 Erstellen Sie mindestens für jede Klasse einen Testfall, der eine entsprechende Funktion baut und jeweils an
 verschiedenen Stellen auswertet. Vergleichen Sie die ausgegebenen Werte (z.B. mit WolframAlpha
 (http://www.wolframalpha.com/)). Testen Sie daraufhin die Ableitung der Funktion auf die gleiche Weise.
+
+Testen Sie insbesondere mehrere verschachtelte Funktionen.
+
+## PABS Tests
+
+Die Fehlermeldung eines PABS Tests könnte zum Beispiel so aussehen:
+java.lang.AssertionError: [Testing f'' with f(x) = tan(x²). Functions differed at x =
+0.805286]
+Expecting:
+<-3.0406769367041577>
+to be close to:
+<9.337822377150792>
+
+```
+0
+```
+```
+n n -9 n
+```
+(^16) _n
+n_
 
 
 PABS 3.7 - University of Würzburg - Impressum (https://www.uni-wuerzburg.de/sonstiges/impressum/) -
